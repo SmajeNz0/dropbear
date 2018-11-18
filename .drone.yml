@@ -26,7 +26,8 @@ steps:
   settings:
     host:
       from_secret: scp_host
-    port: 2222
+    port:
+      from_secret: scp_port
     username: root
     key:
       from_secret: agent_ssh_key
