@@ -9,7 +9,8 @@ steps:
   - git submodule init
   - git submodule update --recursive --remote
 - name: build
-  image: smajenz0/ubuntu-16.04:latest
+  image:
+    from_secret: image
   commands:
     - autoconf
     - autoheader    
