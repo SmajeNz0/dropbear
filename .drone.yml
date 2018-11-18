@@ -9,7 +9,7 @@ steps:
   - git submodule init
   - git submodule update --recursive --remote
 - name: build
-  image: smajenz0/ubuntu-16.04:latest
+  image: localhost:5000/ubuntu-16.04
   commands:
     - autoconf
     - autoheader    
